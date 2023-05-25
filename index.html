@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <h1 id="title">Registro para busqueda laboral.</h1>
+    <p id="description">Completa el formulario para aplicar a la busqueda.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Ingresa tu nombre:
+          <input type="text" id="name" placeholder="Tu nombre" required
+        /></label>
+        <label id="email-label"
+          >Ingresa tu e-mail:
+          <input type="email" id="email" placeholder="Tu email" required
+        /></label>
+        <label id="number-label"
+          >Numero de contacto:
+          <input
+            type="number"
+            id="number"
+            min="18"
+            max="999999999999"
+            placeholder="Tu numero de contacto"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="puesto"
+          >A que puesto te estas postulando?
+          <select name="time" id="dropdown">
+            <option>Elige uno</option>
+            <option value="web">Desarrolador web</option>
+            <option value="movil">Desarrolador mobile</option>
+            <option value="desktop">Desarrolador de escritorio</option>
+            <option value="ux-ui">Diseñador UX/UI</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="trabajo-si"
+          >Actualmente te encontras trabajando? <br />
+          <input type="radio" name="ocupado" value="si" />Si, estoy
+          trabajando</label
+        >
+        <label for="trabajo-no"
+          ><input type="radio" name="ocupado" value="no" />No, estoy en la
+          busqueda</label
+        >
+      </fieldset>
+      <fieldset class="experiencia">
+        <p>Que te parecio esta busqueda?</p>
+        <br />
+        <label for="muy-mala"
+          ><input type="radio" name="calificacion" value="muy-mala" />Muy
+          mala</label
+        >
+        <label for="mala"
+          ><input type="radio" name="calificacion" value="mala" />Mala</label
+        >
+        <label for="regular"
+          ><input
+            type="radio"
+            name="calificacion"
+            value="regular"
+          />Regular</label
+        >
+        <label for="buena"
+          ><input type="radio" name="calificacion" value="buena" />Buena
+        </label>
+        <label for="muy-buena">
+          <input type="radio" name="calificacion" value="muy-buena" />Muy buena.
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>
+          Acepta nuestros
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs"
+            target="_blank"
+            >terminos y condiciones</a
+          >
+        </p>
+        <label for="term"
+          ><input type="checkbox" value="acepto" name="term" />Acepto.</label
+        >
+        <label for="term"
+          ><input type="checkbox" value="rechazo" name="term" />Rechazo.</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="sugerencia"
+          >Podes dejarnos tus sugerecias.
+          <textarea
+            name="sugerenci"
+            id="sugerencia"
+            cols="10"
+            rows="10"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="submit" />
+    </form>
+  </body>
+</html>
